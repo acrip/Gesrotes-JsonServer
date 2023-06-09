@@ -1,17 +1,18 @@
-{ 
-  "compilaciones" : [ 
-    { 
-      "src" : "server.js" ,
-      "uso" : "@vercel/node" , 
-      "config" : { 
-        "includeFiles" : [ "gesrotes.json" ] 
-      } 
-    } 
-  ], 
-  "rutas" : [ 
-    { 
-      "src" : "/(.*)" , 
-      "dest" : "server.js"
-     } 
-  ] 
-}
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "server.js",
+        "use": "@vercel/node",
+        "config": {
+          "includeFiles": ["gesrotes.json"]
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "server.js"
+      }
+    ]
+  }
