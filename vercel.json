@@ -1,8 +1,7 @@
 { 
-  "versión" : 2, 
   "compilaciones" : [ 
     { 
-      "src" : "server.js" , 
+      "src" : "server.js" ,
       "uso" : "@vercel/node" , 
       "config" : { 
         "includeFiles" : [ "gesrotes.json" ] 
